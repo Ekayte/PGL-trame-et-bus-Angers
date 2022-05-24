@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>com.servlets.Accueil</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Connexion</servlet-name>
+    <servlet-class>com.servlets.Connexion</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Connexion</servlet-name>
+    <url-pattern>/connexion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <servlet-class>com.servlets.Contact</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Inscription</servlet-name>
+    <servlet-class>com.servlets.Inscription2</servlet-class>
+     <multipart-config>
+    <!--<location>  chemin sur le serveur </location>  -->
+
+
+        <!--  <location>H:\document part2\B3\pgl\fichierTMP</location>  -->  <!-- chemin alexis --> 
+        <!--  <location>D:\Fichiers-PGL\Fichiers-TMP</location>--> <!-- chemin nora --> 
+       	<location>/usr/share/tomcat/webapps/Pgl/Upload/fichierTempo/</location><!-- chemin serveur --> 
+
+
+        <max-file-size>10485760</max-file-size> <!-- 10 Mo -->
+        <max-request-size>52428800</max-request-size> <!-- 5 x 10 Mo -->
+    	<file-size-threshold>1048576</file-size-threshold> <!-- 1 Mo -->
+    </multipart-config>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Inscription</servlet-name>
+    <url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Map</servlet-name>
+    <servlet-class>com.servlets.Map</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Map</servlet-name>
+    <url-pattern>/map</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Compte</servlet-name>
+    <servlet-class>com.servlets.Compte</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Compte</servlet-name>
+    <url-pattern>/compte</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Supprimer</servlet-name>
+    <servlet-class>com.servlets.Supprimer</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Supprimer</servlet-name>
+    <url-pattern>/supprimer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>com.servlets.Admin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CompteAdmin</servlet-name>
+    <servlet-class>com.servlets.CompteAdmin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CompteAdmin</servlet-name>
+    <url-pattern>/compteAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Gestion</servlet-name>
+    <servlet-class>com.servlets.Gestion</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Gestion</servlet-name>
+    <url-pattern>/gestion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Ajouter</servlet-name>
+    <servlet-class>com.servlets.Ajouter</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Ajouter</servlet-name>
+    <url-pattern>/ajouter</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>SupprimerAdmin</servlet-name>
+    <servlet-class>com.servlets.SupprimerAdmin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SupprimerAdmin</servlet-name>
+    <url-pattern>/supprimerAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModifierDroits</servlet-name>
+    <servlet-class>com.servlets.ModifierDroits</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ModifierDroits</servlet-name>
+    <url-pattern>/modifierDroits</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DataScientist</servlet-name>
+    <servlet-class>com.servlets.DataScientist</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DataScientist</servlet-name>
+    <url-pattern>/dataScientist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CompteData</servlet-name>
+    <servlet-class>com.servlets.CompteData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CompteData</servlet-name>
+    <url-pattern>/compteData</url-pattern>
+  </servlet-mapping>
+  
+
+  
+</web-app>

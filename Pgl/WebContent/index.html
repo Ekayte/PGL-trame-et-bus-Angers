@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>AppData - Tous vos transports en temps réel</title>
+
+        <!-- icone site -->
+        <link rel="shortcut icon" type="image/ico" href="img/icone-appdata.ico">
+
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <!-- contenu du site -->
+    <body>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                <a href="index.html" class="logo">AppData</a>
+                <nav class="menu">
+                    <a href="/Pgl/">Accueil</a>
+                    <a href="#a-propos">À propos</a>
+                    <a href="/Pgl/contact">Contact</a>
+                    <a href="/Pgl/connexion">Se connecter / S'inscrire</a>
+                </nav>
+            </div>
+        </header>
+        <!-- fin header -->
+
+        <!-- bannière -->
+        <section class="container-fluid banner">
+            <div class="ban">
+                <img src="img/banniere-app.jpg" alt="Données en temps réel des transports" />
+            </div>
+            <div class="inner-banner">
+                <h1> Bienvenue sur AppData </h1>
+                <p> Suivez le déplacement de vos transports en temps réel </p>
+                <a class="btn btn-custom" href="/Pgl/connexion">Essayer AppData</a>
+            </div>
+        </section>
+        <!-- fin bannière -->
+
+        <!-- a propos -->
+        <section class="container-fluid about">
+            <div class="container">
+                <h2 id="a-propos">À propos de nous</h2>
+                <hr class="separateur">
+                <div class="propos">
+                    <p>
+                        Étudiants en 3ème année de Bachelor à l'École Supérieure d'Électronique de l'Ouest d'Angers, nous avons conçu
+                        cette application dans le but de donner aux usagers toutes les informations relatives aux transports angevins 
+                        (bus et tramways) et ce, en temps réel.<br><br>
+                        Et l'expérience utilisateur dans tout ça ? Et bien, nous ne l'oublions pas !<br>
+                        En effet, il est permis à l'utilisateur de noter sur 5 étoiles la ou les lignes qu'il emprunte, pour en informer les autres usagers.<br>
+                        <span id="sign"> - Nora, Alexis & Dan</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid cles">
+            <div class="container">                
+                <h2 id="cles">Les 3 clés d'AppData</h2>
+                <hr class="separateur">
+                <div class="row">                  
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <img src="img/location.png" alt="facile d'utilisation" height="45%" /><br>
+                        <h2> Facile d'utilisation </h2>
+                        <p>
+                            L'application AppData a été conçu de la façon la plus intuitive possible.
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <img src="img/realtime.png" alt="En temps réel" height="45%"/><br>
+                        <h2> Données en temps réel </h2>
+                        <p>
+                            Affichage des bus et tramways en temps réel dans l'Agglomération d'Angers.
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <img src="img/feedback.png" alt="avis des utilisateurs" height="45%"/><br>
+                        <h2> Expérience Utilisateur </h2>
+                        <p>
+                            Parce que votre avis compte, donnez une note à chaque ligne de transports empruntée.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- formulaire -->
+        <section class="container-fluid formulaire">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 id="question">Une question? Contactez-nous!</h2>
+                        <hr>
+                        <p>N'hésitez pas à nous questionner ou nous faire part de vos idées.</p>
+                    </div>
+                        
+                    <div class="col-sm-8 contact-form">
+                        <form id="contact" method="post" class="form" role="form">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required />
+                                </div>
+                                <div class="col-xs-6 col-md-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                                </div>
+                                <div class="col-xs-12 col-md-12 form-group">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                                </div>
+                                <div class="col-xs-12 col-md-12 form-group">
+                                    <a class="btn btn-primary pull-right" type="submit">Envoyer</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>           
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="container-fluid footer">
+            <section class="main-footer">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-sm-4">
+                        <h3 id="contacter">Nous contacter</h3>
+                            <address>
+                                <a href="mailto:contact@appdata.com" id="lien" ><img src="img/mail-footer-menu.png" height="25px" alt="email" /><br><br>
+                                <strong>Email</strong><br>contact@appdata.com</a><br><br>
+                                <a href="tel:+33241123456" id="lien" ><img src="img/tel-footer-menu.png" height="25px" alt="telephone" /><br><br>
+                                <strong>Téléphone</strong><br>02 41 12 34 56</a><br><br>
+                            </address>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 id="adresse">Nous trouver</h3>
+                            <address>
+                                10 Boulevard Jean Jeanneteau<br>49000 Angers
+                            </address>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10783.353886935289!2d-0.5513441!3d47.49306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18c2994402ec2868!2sESEO%20Angers%20-%20Grande%20Ecole%20d&#39;Ing%C3%A9nieurs%20G%C3%A9n%C3%A9ralistes!5e0!3m2!1sfr!2sfr!4v1604170525716!5m2!1sfr!2sfr" 
+                            width="300" height="150" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 id="menu">Rubriques</h3>
+                            <nav class="menu2">
+                                <a href="/Pgl/">Accueil</a><br><br>
+                                <a href="index.html#a-propos">À propos</a><br><br>
+                                <a href="/Pgl/contact">Contact</a><br><br>
+                                <a href="/Pgl/connexion">Se connecter / S'inscrire</a>
+                            </nav>
+                        </div>             
+                    </div>
+                </div>
+            </section>
+            <section class="copyright">
+                <div class="container">
+                    <p id="copy">© AppData 2020 by Nora BENBRIK, Alexis FREDOUILLARD & Dan PUSCUTA</p>
+                </div>
+            </section>
+        </footer>
+    </body>
+    
+    
+    
+    
+</html>

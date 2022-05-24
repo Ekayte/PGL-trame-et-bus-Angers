@@ -1,0 +1,19 @@
+tomcat :
+user equipe2
+mdp pglequipe2
+
+tomcat par default :
+admin
+network!
+
+adresse mail : 
+mail : pglequipe2.appdata@gmail.com
+mdp : Equipe2Pgl$
+
+phpMyadmmin
+user : root
+mdp : pglequipe2
+
+BDD 
+user : adminapp
+mdp : appdata
